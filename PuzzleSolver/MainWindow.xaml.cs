@@ -274,7 +274,7 @@ namespace PuzzleSolver{
                     e.Handled = true;
                     break;
                 case Key.Back:
-                    if (textBox.Text.Length > 0){
+                    if (textBox.Text.Length > 0 && textBox.CaretIndex !=0){
                         int caretIndex = textBox.CaretIndex;
                         textBox.Text = textBox.Text.Remove(caretIndex - 1, 1);
                         textBox.CaretIndex = caretIndex - 1;
